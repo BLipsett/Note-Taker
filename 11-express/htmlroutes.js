@@ -1,4 +1,8 @@
+const express = require("express");
 let path = require("path")
+const app = express();
+
+app.use(express.static('public'));
 
 
 module.exports = function(app) {
