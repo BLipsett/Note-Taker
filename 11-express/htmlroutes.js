@@ -10,11 +10,11 @@ module.exports = function(app) {
 
 
     app.get("*", function (req, res) {
-        res.sendfile(path.join(__dirname, "../11-express/02-Homework/Develop/public/index.html"))
+        res.sendfile(path.join(__dirname, "../11-express/public/index.html"))
     })
 
     app.get("/notes", function (req, res) {
-        res.sendfile(path.join(__dirname, "../11-express/02-Homework/Develop/public/notes.html"))
+        res.sendfile(path.join(__dirname, "../11-express/public/notes.html"))
     })
 
 
